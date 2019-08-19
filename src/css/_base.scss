@@ -1,0 +1,222 @@
+$bgc: rgba(255, 255, 255, 0.8);
+
+.mark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    overflow: hidden;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+@keyframes noticeScroll {
+    from {
+        transform: translate3d(100vw, 0, 0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0)
+    }
+}
+
+.btn_1 {
+    padding: 0.7rem 0.9rem;
+    background: #ffffff;
+    border-radius: 1.1rem;
+    font-size: 1rem;
+    color: #353535;
+    box-shadow: 0 0.1rem 0.2rem #b5b5b5;
+}
+
+.btn_2 {
+    width: 14.75rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5rem;
+    background: #c22d27;
+    border-radius: 1rem;
+    margin: 0 auto;
+    box-shadow: 0 0.1rem 0.2rem #b5b5b5;
+    display: block;
+}
+
+.radioActive {
+    color: #353535;
+    .radio_1 {
+        border: 1px solid #353535;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #c22d27;
+        }
+    }
+}
+
+.radio_1 {
+    position: relative;
+    display: inline-block;
+    top: -1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #8e8e8e;
+    margin-right: 1rem;
+}
+
+@media screen and(min-width: 319px) and(max-width: 359px) {
+    .radioActive {
+        color: #353535;
+        .radio_1 {
+            border: 1px solid #353535;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #c22d27;
+            }
+        }
+    }
+    .radio_1 {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #8e8e8e;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and(min-width: 360px) and(max-width: 400px) {
+    .radioActive {
+        color: #353535;
+        .radio_1 {
+            border: 1px solid #353535;
+            &:after {
+                content: '';
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #c22d27;
+            }
+        }
+    }
+    .radio_1 {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid #8e8e8e;
+        margin-right: 1rem;
+    }
+}
+
+.jintou {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0.2rem;
+        right: -1.2rem;
+        width: 0.6rem;
+        height: 0.6rem;
+        border: 0.1rem solid #8e8e8e;
+        border-bottom: none;
+        border-left: none;
+        transform: rotate(45deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, th {
+    list-style-type: none;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+em, i, b {
+    font-style: normal;
+}
+
+b {
+    font-weight: bold;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul, li {
+    list-style: none;
+}
+
+input, button {
+    color: inherit;
+    font-size: inherit;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.disabled:hover {
+    cursor: default;
+}
+
+*:focus {
+    outline: none;
+}
+
+textarea {
+    font-size: inherit;
+    resize: none;
+    border: 1px solid #353535;
+}
+
+html, body {
+    font-size: 16px;
+    color: #353535;
+    line-height: 1.15;
+    font-family: "PingFang SC", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
